@@ -1,1 +1,261 @@
-22222222222222
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Loco-CTO/UI-Library/main/VisionLibV2/source.lua'))()
+
+local Window = Library:Create({
+	Name = "Kyoichi", -- String
+	Footer = "Report bugs at Discord", -- String
+	ToggleKey = Enum.KeyCode.LeftAlt, -- Enum.KeyCode
+	LoadedCallback = function()
+		print("Kyoichi Loaded Succesfully. Any suggestions or bugs? discord.gg/t9FXbh6HgY")
+	end,
+	
+	KeySystem = false, -- Boolean
+	Key = "ofcPMj6ikR8nnAHlI93ZPtBn", -- String
+	MaxAttempts = 5, -- Integer
+	DiscordLink = "https://discord.gg/t9FXbh6HgY", -- String (Set it to nil if you do not have one, the button will not pop out)
+	ToggledRelativeYOffset = 5 -- Number (Y Offset from bottom of your screen. Set it to nil if you want it to be centred)
+})
+
+
+local Tab = Window:Tab({
+	Name = "Simulator Games", -- String
+	Icon = "rbxassetid://6678908798", -- String
+	Color = Color3.new(1, 0, 0) -- Color3
+})
+
+local Section = Tab:Section({
+	Name = "Simulator Games listed here." -- String
+})
+
+local Button = Section:Button({
+	Name = "Pet Simulator X - jmes", -- String
+	Callback = function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Bee Swarm", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://www.macrov2-script.xyz/macrov2.lua"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Vehicle Legends", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/Kyoichi-Hub/main/vehiclelegends"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Refinery Caves", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/pawpaw579/refinery/main/Refinery%20Ore%20Tp",true))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Shark Bite 2", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://shattered-gang.lol/scripts/sharkbite_2.lua"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Mining Simulator 2", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://system-exodus.com/scripts/MiningSimulator/MiningSimulator2.lua", true))()
+	end
+})
+
+local Tab = Window:Tab({
+	Name = "Anime Games", -- String
+	Icon = "rbxassetid://6678908798", -- String
+	Color = Color3.new(1, 0, 0) -- Color3
+})
+
+local Section = Tab:Section({
+	Name = "Anime Games listed here." -- String
+})
+
+local Button = Section:Button({
+	Name = "Anime Adventures", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Fruit Battlegrounds", -- String
+	Callback = function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/kyoichi35/Kyoichi-Hub/main/fruta"),true))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Ro Ghoul", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/TrapstarKSSKSKSKKS/Main/main/TrapHub.lua"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Blox Fruits - Confetti Farm", -- String
+	Callback = function()
+		_G.AutoConfetti = true
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Confetti"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "A One Piece Game - Lazy Hub", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/RbScripts/main/lazyhub.lua"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "A One Piece Game - 6FootHub", -- String
+	Callback = function()
+		loadstring(game:HttpGet('https://www.6footscripts.com/Scripts/6FootHub/Hub.lua'))();
+	end
+})
+
+local Button = Section:Button({
+	Name = "King Legacy", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/Kyoichi-Hub/main/king%20legacy"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Project Slayers", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/Kyoichi-Hub/main/project%20slayers"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Shindo Life - OP", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Xiovr/Roblox/main/SL.lua"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Blox Fruits Mukuro Hub", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/Kyoichi-Hub/main/king%20legacy"))()
+	end
+})
+
+local Tab = Window:Tab({
+	Name = "Combat Games", -- String
+	Icon = "rbxassetid://6678908798", -- String
+	Color = Color3.new(1, 0, 0) -- Color3
+})
+
+local Section = Tab:Section({
+	Name = "Combat Games listed here." -- String
+})
+
+local Button = Section:Button({
+	Name = "Apocalypse Rising 2", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://anomiss.in/script.lua"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Murder Mystery 2", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/kyoichi35/Kyoichi-Hub/main/mystery"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "BIG Paintball", -- String
+	Callback = function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/kyoichi35/Kyoichi-Hub/main/ball"),true))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Phantom Forces - Silent Aim", -- String
+	Callback = function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/kyoichi35/Kyoichi-Hub/main/phf"),true))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Arsenal - Bolts Hub", -- String
+	Callback = function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/BoltsHubV5"),true))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "World Zero", -- String
+	Callback = function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/HeiKe2022/wz-beta/main/combine.lua"),true))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Combat Warriors", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyImposterRed/Scripts/main/NOVA_HUB_SOURCE"))()
+	end
+})
+
+local Tab = Window:Tab({
+	Name = "Misc", -- String
+	Icon = "rbxassetid://6678908798", -- String
+	Color = Color3.new(1, 0, 0) -- Color3
+})
+
+local Section = Tab:Section({
+	Name = "Script hubs and etc. listed here." -- String
+})
+
+local Button = Section:Button({
+	Name = "Vehicle speed boost.(click once)", -- String
+	Callback = function()
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Emergency-Response:-Liberty-County-Car-Boost-Cheat-4590"))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Join Empty Server", -- String
+	Callback = function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/kyoichi35/Kyoichi-Hub/main/small%20server")()
+	end
+})
+
+local Button = Section:Button({
+	Name = "VG Hub - 150+ Games", -- String
+	Callback = function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub"),true))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "DomainX", -- String
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Infinite Yield", -- String
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end
+})
+
+local Button = Section:Button({
+	Name = "Destroy The Script", -- String
+	Callback = function()
+		Library:Destroy()
+	end
+})
